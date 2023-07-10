@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */ 
-import './RecipeDetails.css' 
+import './RecipeList.css' 
 import { Link } from 'react-router-dom'
   
-function RecipeDetails({ recipes }) {
+function RecipeList({ recipes }) {
 
   if (!recipes) {
     return <p>No recipes available.</p>;
@@ -10,11 +10,11 @@ function RecipeDetails({ recipes }) {
   
   return (
 
-    <div className='recipedetails-list'> 
+    <div className='recipe-list'> 
       {recipes.map(recipe => (
         <div key={recipe.id} className='card'>  
-            <h3 className='recipedetails-title'>{recipe.title}</h3>
-            <h4 className='recipedetails-subtitle'>By {recipe.author}</h4>
+            <h3 className='recipelist-title'>{recipe.title}</h3>
+            <h4 className='recipelist-subtitle'>By {recipe.author}</h4>
             <p className='recipe-cooking-time'>Cook Time - {recipe.cookingTime} Minutes</p>
             <Link to={`/recipes/${recipe.id}`}>Cook Now</Link>
         </div> 
@@ -23,4 +23,4 @@ function RecipeDetails({ recipes }) {
   )
 }
 
-export default RecipeDetails
+export default RecipeList

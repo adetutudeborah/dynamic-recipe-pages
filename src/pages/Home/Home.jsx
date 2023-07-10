@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */  
-import RecipeDetails from '../../components/RecipeDetails/RecipeDetails'
+import RecipeList from '../../components/RecipeList/RecipeList'
 import useFetch from '../../hooks/useFetch';
 import './Home.css'
 
@@ -12,7 +12,7 @@ const { data, isLoading, error } = useFetch('http://localhost:3000/recipes')
       <h1 className="home-title">Recipe List</h1>  
        {error && <p className='error'>{error}</p>}
        {isLoading && <p className='loading'>Loading Recipies...</p>}
-      <RecipeDetails recipes={data}/>
+      <RecipeList recipes={data}/>
     </div>
   )
 }

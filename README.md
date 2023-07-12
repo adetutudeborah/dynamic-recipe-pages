@@ -4,7 +4,6 @@
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Setting up the repository](#setting-up-the-repository)
@@ -17,17 +16,14 @@
 
 The purpose of this project is to showcase how to create dynamic pages with route parameters and the useParams hook in React.
 
-# Links
-
-- [Live site URL]()
-- [Technical article]()
-
 # My process
 
 ## Built with
 
 - HTML
 - CSS 
+- JavaScript
+- React
 
 # Setting up the repository
 
